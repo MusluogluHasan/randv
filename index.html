@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERRANDEVU</title>
+    <link rel="stylesheet" href="./assets/fonts/font-style.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header id="header" class="home">
+        <nav class="navbar navbar-expand-md bg-transparent text-white py-4">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center justify-content-center m-auto">
+                    <a class="navbar-brand text-white" href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+                    <button class="navbar-toggler rounded-0 w-25  fs-6 border-3 my-2" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item me-4 mb-2">
+                            <a class="" href="#">
+                                <img class="nav-icon me-2" src="./assets/images/home/profile-user.png"
+                                    alt="profile-user.png">
+                            </a>
+                            <a href="#">
+                                Login
+                            </a>
+                            <span class="mx-1">/</span>
+                            <a href="">
+                                Sign Up
+                            </a></li>
+                        <li class="nav-item me-2 mb-2">
+                            <div class="dropdown"><img class="nav-icon" src="./assets/images/home/usa.png" alt="">
+                                <button class="dropdown-toggle bg-transparent border-0 dropdown-lang"
+                                    data-bs-toggle="dropdown">
+                                    US
+                                </button>
+                                <ul class="dropdown-menu bg-transparent p-0 border-white">
+                                    <li><a class="dropdown-item text-white" href="#">Türkçe</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button class="for-business-btn" id="">for businesses</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HERO SLİDER-->
+    <section class="home-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active slide-1">
+                </div>
+                <div class="carousel-item slide-2">
+                </div>
+                <div class="carousel-item slide-3">
+                </div>
+                <div class="carousel-item slide-4">
+                </div>
+                <div class="carousel-item slide-5">
+                </div>
+                <div class="carousel-item slide-6">
+                </div>
+                <h1 class="slider-img-title">Her an güzelliğinizin <span id="text"></span></h1>
+                <p class="slider-img-text"></p>
+                <div class="slider-img-input">
+                    <div class="input-group bg-white">
+                        <div class="input-group-prepend d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-magnifying-glass px-2 input-in-icon"></i>
+                        </div>
+                        <input type="text" placeholder="Book your servicess..">
+                    </div>
+                    <div class="input-group bg-white">
+                        <div class="input-group-prepend d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-location-dot px-2 input-in-icon"></i>
+                        </div>
+                        <input type="text" placeholder="Where?">
+                        <div class="input-group-prepend d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-paper-plane input-in-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-img-app-link">
+                    <a href="#"><img class="me-2" src="./assets/images/home/google.png" alt="google.png"></a>
+                    <a href="#"><img src="./assets/images/home/app.png" alt="app.png"></a>
+                </div>
+                <div class="slider-img-bottom-link">
+                    <a href="#">Güzellik Salonları</a>
+                    <a href="#">Kuaför, Saç Tasarım</a>
+                    <a href="#">Tattoo Merkezleri </a>
+                    <a href="#">Spa, Masaj</a>
+                    <a href="#">Sağlıklı Yaşam Merkezleri</a>
+                    <a href="#">Medikal Estetik</a>
+                    <a href="#">Cerrahi Estetik</a>
+                    <a href="#">Diyetisyen & Beslenme Koçu</a>
+                    <a href="#">Daha fazlası...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SERVİCES SEARCH SECTİON-->
+    <!--
+    <section class="services-search">
+        <div class="container">
+            <div class="services-main s-right pt-3">
+                <div class="s-title-right s-title">
+                    <h1 class="text-uppercase">aradığın hizmeti keşfet, incele, randevu al</h1>
+                </div>
+                <div class="s-img-right s-img position-relative">
+                    <img src="./assets/images/services/aaa.png" alt="">
+                    <div class="phone-in-b">
+                        <img src="./assets/images/services/phone-in-b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="services-main s-left">
+                <div class="s-img-left s-img ">
+                    <img src="./assets/images/services/aaa.png" alt="">
+                </div>
+                <div class="s-title-left s-title">
+                    <h1>Yakınında hizmet verenleri listele, hizmet seç ve randevu oluştur</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    
+    
+    <!--CATEGORYS SECTİON-->
+    <section id="category" class="category">
+        <div class="container">
+            <div class="section-title">
+                <h1>Kategoriler</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c1.jpg" alt="">
+                    <p>Güzellik Salonları</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c2.jpg" alt="">
+                    <p>Kuaför, Saç Tasarım</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c3.jpg" alt="">
+                    <p>Tattoo Merkezleri</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c4.jpg" alt="">
+                    <p>Spa, Masaj</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c5.jpg" alt="">
+                    <p>Sağlıklı Yaşam <br> Merkezleri</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c6.jpg" alt="">
+                    <p>Medikal Estetik</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c7.jpg" alt="">
+                    <p>Cerrrahi Estetik</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c8.jpg" alt="">
+                    <p>Diyetisyen & <br> Beslenme Koçu</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c9.jpg" alt="">
+                    <p>Psikolog</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c10.jpg" alt="">
+                    <p>Özel Klinikler</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c11.jpg" alt="">
+                    <p>Freelance Uzmanlar</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/c12.jpg" alt="">
+                    <p>Evcil Hayvan Bakımı</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--HALLS SECTİON-->
+    <section class="hall">
+        <div class="container">
+            <div class="section-title">
+                <h1>Popüler Salonlar</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall1.png" alt="">
+                    <p>Selin Beauty</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall2.png" alt="">
+                    <p>Yıldız Kuaför</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall3.png" alt="">
+                    <p>Star Beauty Center</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall4.png" alt="">
+                    <p>Pelin Beauty</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall5.png" alt="">
+                    <p>TP Beauty Center</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall6.png" alt="">
+                    <p>Eylül Güzellik Merkezi</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall7.png" alt="">
+                    <p>Girl Center</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall8.png" alt="">
+                    <p>Beauty Shine</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row hall-cntns">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall1.png" alt="">
+                    <p>Selin Beauty</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall2.png" alt="">
+                    <p>Yıldız Kuaför</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall3.png" alt="">
+                    <p>Star Beauty Center</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall4.png" alt="">
+                    <p>Pelin Beauty</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall5.png" alt="">
+                    <p>TP Beauty Center</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall6.png" alt="">
+                    <p>Eylül Güzellik Merkezi</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall7.png" alt="">
+                    <p>Girl Center</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="./assets/images/category/hall8.png" alt="">
+                    <p>Beauty Shine</p>
+                    <div class="hall-info">
+                        <h6>İstanbul</h6>
+                        <h5><i class="fa-solid fa-star hall-star"></i>4.5</h5>
+                    </div>
+                </div>
+            </div>
+            <h3 class="continue">Devamını Gör..</h3>
+        </div>
+    </section>
+    <!--İNFO SECTİON-->
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="./assets/images/info/phone-i.png" alt="">
+                    <h1>Her an randevu</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./assets/images/info/wallet-i.png" alt="">
+                    <h1>Kolay ödeme</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./assets/images/info/home-i.png" alt="">
+                    <h1>Olduğunuz her yerde</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CARDS SECTİON-->
+    <section class="cards">
+        <div class="container">
+            <div class="card-group">
+                <div class="card card1" data-aos-easing="ease-in-sine" data-aos="fade-right" data-aos-delay="300">
+                    <div class="card-body d-flex justify-content-center">
+                        <div class="card-img"><img src="./assets/images/cards/card1.png" alt="card1.png">
+                        </div>
+                        <div class="card-main">
+                            <h1 class="card-title">Sizler için</h1>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum dolor has been industry's</p>
+                            <div class="card-app">
+                                <a href="#"><img class="card-app me-2" src="./assets/images/download/play-stor.png"
+                                        alt=""></a>
+                                <a href="#"><img src="./assets/images/download/app-stor.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card2" data-aos-easing="ease-in-sine" data-aos="fade-left" data-aos-delay="450">
+                    <div class="card-body d-flex justify-content-center">
+                        <div class="card-main">
+                            <h1 class="card-title">Sizler için</h1>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry. Lorem Ipsum dolor has beens the industry 's</p>
+                            <div class="card-link"><a href="#">herrandevuisletme.com</a></div>
+                        </div>
+                        <div class="card-img"><img src="./assets/images/cards/card2.png" alt="card2.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card3" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="650">
+                <div class=" card3-main">
+                    <div class="card3-img">
+                        <img src="./assets/images/cards/card33.png" class="card3-img" alt="card3.png">
+                    </div>
+                    <div class="card-main">
+                        <h1 class="card-title">Freelance Çalışma Şartları</h1>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry's standard dummy text ever has been the since the.<span
+                                class="card3-p-hidden"> Lorem Ipsum 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--MEETING SECTİON-->
+    <section class="meeting">
+        <div class="container">
+            <div class="meeting-main">
+                <div class="meeting-main-info  meeting-reverse mb-4">
+                    <div class="meeting-text">
+                        <h3>Randevu kolaylık fırsatı</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has survived not only five
+                            centuries. but also the leap into electronic typesetting, remaining
+                            essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        </p>
+                    </div>
+                    <div class=" col-right meeting-img">
+                        <img src="./assets/images/meeting/meet1.png" alt="">
+                    </div>
+                </div>
+                <div class="meeting-main-info mb-4">
+                    <div class="meeting-img" data-aos="flip-right" data-aos-delay="300">
+                        <img src="./assets/images/meeting/meet2.png" alt="">
+                    </div>
+                    <div class="meeting-text col-right">
+                        <h3>Hatırlatmalar ile unutmazsın</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it to
+                            make a type specimen book. It has survived not only five centuries. but
+                            also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets
+                            containing Lorem Ipsum passages, and more recently with desktop</p>
+                    </div>
+                </div>
+                <div class="meeting-main-info meeting-reverse">
+                    <div class="meeting-text">
+                        <h3>Aradığın her hizmet</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has survived not only five
+                            centuries. but also the leap into electronic typesetting, remaining
+                            essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with
+                            desktop publishing software like Aldus PageMaker including versions of</p>
+                    </div>
+                    <div class=" col-right  meeting-img">
+                        <img src="./assets/images/meeting/meet3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CREATİNG SECTİON-->
+    <section class="creating">
+        <div class="creating-card creating-card1 ">
+            <div class="container">
+                <h3 data-aos="fade-right" data-aos-delay="450">Create an amazing</h3>
+                <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and
+                </p>
+                <div class="creating-img creating-img1">
+                    <img src="./assets/images/home/creating3.png" alt="creating1.png">
+                    <div class="creating-top-i">
+                        <div class="creating-star d-flex justify-content-center">
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                        </div>
+                        <h6>"Çok harika bir hizmet"</h6>
+                    </div>
+                    <div class="creating-bottom-i d-flex justify-content-around">
+                        <div>
+                            <h6>Recurring</h6>
+                            <h5>Tam spa tedavisi</h5>
+                        </div>
+                        <div class="creating-return">
+                            <i class="fa-solid fa-rotate-right c-rotate"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="creating-card float-sm-end creating-card2">
+            <div class="container">
+                <h3 data-aos="fade-left" data-aos-delay="450">Create an amazing</h3>
+                <p class="float-sm-end">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem
+                    Ipsum has been the industry
+                    '
+                    s standard
+                    dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and
+                </p>
+                <div class="creating-img creating-img2">
+                    <img src="./assets/images/home/creating4.png" alt="creating1.png">
+                    <div class="creating-top-i">
+                        <div class="creating-star d-flex justify-content-center">
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                            <i class="fa-solid fa-star c-star"></i>
+                        </div>
+                        <h6>"Çok harika bir hizmet"</h6>
+                    </div>
+                    <div class="creating-bottom-i d-flex justify-content-around">
+                        <div>
+                            <h6 class="text-start">Recurring</h6>
+                            <h5>Tam spa tedavisi</h5>
+                        </div>
+                        <div class="creating-return">
+                            <i class="fa-solid fa-rotate-right c-rotate"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--DOWNLOAD SECTİON-->
+    <section class="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 download-p" data-aos="zoom-in-down" data-aos-easing="ease-in-sine"
+                    data-aos-delay="200">
+                    <img class="d-phone" src="./assets/images/download/phone.png" alt="phone.png">
+                </div>
+                <div class="col-md-6 d-flex flex-column ps-5">
+                    <img class="d-title" src="./assets/images/download/title.png" alt="">
+                    <h1>Uygulamayı indirin</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                    </p>
+                    <div class="d-app">
+                        <a href="#"><img src="./assets/images/download/play-stor.png" alt=""></a>
+                        <a href="#"><img src="./assets/images/download/app-stor.png" alt=""></a>
+                    </div>
+                    <img class="d-circle" src="./assets/images/download/circle.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--POPULAR CİTY SECTİON-->
+    <section class="popular-city">
+        <div class="container">
+            <div class="section-title">
+                <h1>Popüler Şehirler</h1>
+            </div>
+            <div class="city-filter">
+                <div class="categories-filter">
+                    <button class="btn-filter" data-city="istanbul">İstanbul</button>
+                    <button class="btn-filter" data-city="ankara">Ankara</button>
+                    <button class="btn-filter" data-city="izmir">İzmir</button>
+                    <button class="btn-filter" data-city="konya">Konya</button>
+                    <button class="btn-filter" data-city="trabzon">Trabzon</button>
+
+                </div>
+                <div class="row mb-4">
+                    <div class="p-city" id="istanbul">
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Bakırköy</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="p-city city-hide" id="ankara">
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Ankara</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="p-city city-hide" id="izmir">
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty İzmir</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="p-city city-hide" id="konya">
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Konya</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="p-city city-hide" id="trabzon">
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                        </ul>
+                        <ul class="d-flex">
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                            <a href="#">
+                                <li>Selin Beauty Trabzon</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-p f-title">
+                    <a href="./index.html"><img class="f-logo" src="./assets/images/logo.png" alt="logo.png"></a>
+                    <div class="f-app">
+                        <a href="#"><img class="f-download me-1" src="./assets/images/home/google.png" alt=""></a>
+                        <a href="#"><img class="f-download" src="./assets/images/home/app.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="f-menu footer-p">
+                    <ul>
+                        <a href="./index.html">
+                            <li>Anasayfa</li>
+                        </a>
+                        <a href="#category">
+                            <li>Hakkımızda</li>
+                        </a>
+                        <a href="#">
+                            <li class="">İletişim</li>
+                        </a>
+                        <a href="#">
+                            <li>Bizimle İletişime geçin</li>
+                        </a>
+                        <a href="#">
+                            <li>destek merkezi</li>
+                        </a>
+                        <a href="#">
+                            <li>partnerlerimiz</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="f-category footer-p d-flex f-c-hidden">
+                    <ul>
+                        <li>Kategoriler</li>
+                        <li>Güzellik Salonları</li>
+                        <li>Kuaför, Saç Tasarım</li>
+                        <li>Tattoo Merkezleri</li>
+                        <li>Spa, Masaj</li>
+                        <li>Sağlıklı Yaşam Merkezleri</li>
+                    </ul>
+                    <ul class="">
+                        <li><br></li>
+                        <li>Medikal Estetik</li>
+                        <li>Cerrahi Estetik</li>
+                        <li>Diyetisyen & Beslenme Koçu</li>
+                        <li>Psikolog</li>
+                        <li>Özel Klinikler</li>
+                    </ul>
+                </div>
+                <div class="f-social footer-p ">
+                    <ul>
+                        <a href="#">
+                            <li class="">ÜYELİK SÖZLEŞMESİ</li>
+                        </a>
+                        <a href="#">
+                            <li class="">ÇEREZ POLİTİKASI</li>
+                        </a>
+                        <a class="f-link-b" href="#">
+                            <li class="">Mağaza Açmak İstiyorum</li>
+                        </a>
+                        <li class="f-social-title">SOSYAL MEDYA</li>
+                        <li class="f-social-icon">
+                            <a href="#"><i class="fa-brands fa-youtube f-icon me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter f-icon me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f f-icon me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram f-icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/fontawesome-all.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js.map"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
